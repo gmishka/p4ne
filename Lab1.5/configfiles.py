@@ -4,7 +4,7 @@ import glob
 
 set_of_ip = set()
 
-for current_file_name in glob.glob("/Users/mike/PycharmProjects/p4ne/Lab1.5/*.log"):
+for current_file_name in glob.glob("*.log"):
     with open(current_file_name) as f:
         for current_line in f:
             if current_line.find("ip address") == 1:
